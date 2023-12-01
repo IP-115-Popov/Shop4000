@@ -38,6 +38,7 @@ class BasketItemsAdapter(var items: MutableList<Item>, var context: Context): Re
         holder.btnDel.setOnClickListener()
         {
             items.removeAt(position)
+            notifyItemRemoved(holder.getAdapterPosition())
         }
     }
     override fun getItemCount(): Int {
