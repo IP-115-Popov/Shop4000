@@ -15,6 +15,9 @@
         android:theme="@style/Theme.RegistrationPage"
         tools:targetApi="31">
         <activity
+            android:name=".ItemActivity"
+            android:exported="false" />
+        <activity
             android:name=".ItemsActivity"
             android:exported="false" />
         <activity
