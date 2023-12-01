@@ -5,32 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#201E28"
-    tools:context=".ItemsActivity">
+    android:background="#256C39"
+    tools:context=".BasketActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+
+        android:text="Корзина"
         android:fontFamily="@font/inter_bold"
         android:textColor="#fdfdfd"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="Товары" />
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/item_list"
+        android:id="@+id/basket_list"
         android:layout_width="match_parent"
-        android:layout_height="501dp"
+        android:layout_height="466dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="30dp" />
+
     <Button
-        android:id="@+id/button_to_basket"
+        android:id="@+id/basket_button_to_items"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_gravity="center"
         android:backgroundTint="#419C30"
-        android:text="Корзина" />
+        android:text="К товарам" />
 
 </LinearLayout>
